@@ -26,3 +26,4 @@ exit()
 
 ## To run the app after all is set up run 
 `python app.py`
+then in a web browser navigate to http://localhost:5000/
