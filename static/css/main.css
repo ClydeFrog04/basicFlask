@@ -78,11 +78,12 @@ a{
 
 a.update{
     /* color: rgb(37, 175, 37); */
-    background-color: ;
+    background-color: #3faf4b;
     margin-bottom: .5rem;
 }
 a.delete{
     /* color: rgb(199, 49, 49); */
+    background-color: #e41669;
 }
 
 .actions{
