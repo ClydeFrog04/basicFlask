@@ -3,6 +3,10 @@
     font-family: sans-serif;
     color: green;
 } */
+*{
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     font-family: sans-serif;
@@ -15,7 +19,7 @@ body, html {
 }
 
 table, td, th {
-    border: 1px solid #aaa;
+    /* border: 1px solid #aaa; */
 }
 
 table {
@@ -25,6 +29,7 @@ table {
 
 th {
     height: 30px;
+    /* border-radius: 4px; */
 }
 
 td {
@@ -39,4 +44,47 @@ td {
 
 #content {
     width: 70%;
+}
+
+table {
+    border-collapse:separate;
+    border-spacing: 0;
+    border: solid rgb(22, 79, 22) 4px;
+    border-radius:6px;
+}
+
+td, th {
+    border-left: solid rgb(22, 79, 22) 4px;
+    border-top: solid rgb(22, 79, 22) 4px;
+}
+
+th {
+    /* background-color: blue; */
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+a{
+    text-decoration: none;
+    background-color: grey;
+    padding: .5rem;
+    border-radius: 4px;
+    display: block;
+    color: white;
+}
+
+a.update{
+    /* color: rgb(37, 175, 37); */
+    background-color: ;
+    margin-bottom: .5rem;
+}
+a.delete{
+    /* color: rgb(199, 49, 49); */
+}
+
+.actions{
+    gap: .5rem;
 }

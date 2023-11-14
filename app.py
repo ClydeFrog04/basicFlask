@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import sys
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
@@ -22,9 +23,13 @@ with app.app_context():
 def index():
     if request.method == 'POST':
         taskContent = request.form['content']
+        if len(taskContent) < 1:
+            tasks = Todo.query.order_by(Todo.date_created).all()
+            return render_template("index.html", tasks=tasks, error="Your task needs to have a name")
         newTask = Todo(content=taskContent)
 
         try:
+            print("sss" + newTask.content, file=sys.stderr)
             db.session.add(newTask)
             db.session.commit()
             return redirect("/")
