@@ -1,5 +1,11 @@
 # BasicFlask
 
+## What is this project?
+This project is a simple todo application, built in python using Flask for the api code, and Jinja for the web page. This project was made for me to take a quick dive into the Flask framework!
+
+[Read more about Flask here!](https://github.com/pallets/flask)
+
+
 ## Using venv for environment management
 
 steps to setup!
