@@ -37,9 +37,34 @@ td {
     padding: 5px;
 }
 
-.form {
-    margin-top: 20px;
+form {
+    margin: 20px 0;
     text-align: center;
+    display: flex;
+    gap: .5rem;
+}
+
+input[type=text]{
+    border-radius: 4px;
+    border: 2px solid #aaa;
+    /* margin: 8px 0; */
+    outline: none;
+    /* padding: 2px; */
+    box-sizing: border-box;
+    transition: .3s;
+}
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+input[type=submit]{
+    padding: 4px 6px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: white;
 }
 
 #content {
