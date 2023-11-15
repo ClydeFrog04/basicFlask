@@ -36,3 +36,6 @@ then in a web browser navigate to http://localhost:5000/
 
 ## If you run into "working outside of application context" error
 If you run into this error, you can skip the python shell initialization and go straight to running the app with `python app.py` or `python3 app.py` if on mac or linux. Make sure to exit your python shell before running the python commands!
+
+## If you run into "localhost access denied" error when navigating to localhost in the browser
+Change the last line in app.py from `app.run(debug=True)` to `app.run(debug=True, port=8001)` re-run the app and navigate to `http://localhost:8001/`
